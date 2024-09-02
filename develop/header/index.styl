@@ -1,0 +1,30 @@
+
+header
+	display: grid
+	grid-template-columns: auto 1fr auto
+	align-items: center
+	height: 3rem
+	gap: 1rem
+	padding: 0px 1rem
+	& > a
+		display: inline-flex
+		align-items: center
+		& > span > svg
+			width: 18px
+			height: 18px
+		& > dfn
+			transform: translateX( -28px )
+			& > svg
+				width: 24px
+				height: 24px
+	& > nav
+		display: flex
+		gap: 1rem
+		a
+			font: var( --title-font )
+			font-size: large
+
+@media (prefers-color-scheme: dark)
+	header > a > span > svg *
+		fill: var(--text-color)
+		opacity: 1 !important
