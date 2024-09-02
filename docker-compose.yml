@@ -10,7 +10,6 @@ services:
       - .env
     ports:
       - 9090:9090
-      - 9005:9005
     volumes:
       - ./:/usr/src/keyboard-shortcuts:rw
     command: "yarn start --host 0.0.0.0"
